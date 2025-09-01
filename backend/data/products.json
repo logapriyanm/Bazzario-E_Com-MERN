@@ -1,0 +1,84 @@
+[
+    {
+        "name": "OPPO F12S Pro 5G",
+        "price":245.67,
+        "description":"Oppo F21s Pro 5G is a powerful device",
+        "ratings":4.5,
+        "images":[
+            {
+                "image":"product_jpj"
+            }
+        ],
+        "category":"Mobile Phones",
+        "seller": "Amazon",
+        "stock":5,
+        "numOfReviews":15,
+        "Reviews":[]
+    },
+  {
+    "name": "Samsung Galaxy S23 Ultra",
+    "price": 1199.99,
+    "description": "Samsung Galaxy S23 Ultra with stunning display and camera.",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "samsung_s23ultra.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Samsung Store",
+    "stock": 12,
+    "numOfReviews": 210,
+    "Reviews": []
+  },
+  {
+    "name": "Apple iPhone 14 Pro Max",
+    "price": 1299.00,
+    "description": "Apple iPhone 14 Pro Max with Dynamic Island and ProMotion display.",
+    "ratings": 4.7,
+    "images": [
+      {
+        "image": "iphone_14promax.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Apple",
+    "stock": 8,
+    "numOfReviews": 320,
+    "Reviews": []
+  },
+  {
+    "name": "OnePlus 11R 5G",
+    "price": 499.50,
+    "description": "OnePlus 11R 5G offers speed and smooth experience with OxygenOS.",
+    "ratings": 4.6,
+    "images": [
+      {
+        "image": "oneplus_11r.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "OnePlus",
+    "stock": 20,
+    "numOfReviews": 150,
+    "Reviews": []
+  },
+  {
+    "name": "Xiaomi Redmi Note 12 Pro",
+    "price": 329.99,
+    "description": "Redmi Note 12 Pro with 120Hz AMOLED display and fast charging.",
+    "ratings": 4.4,
+    "images": [
+      {
+        "image": "redmi_note12pro.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Xiaomi",
+    "stock": 20,
+    "numOfReviews": 95,
+    "Reviews": []
+  }
+
+
+]
