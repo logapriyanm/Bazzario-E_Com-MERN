@@ -8,14 +8,14 @@ if(process.env.NODE_ENV == 'development'){
     res.status(err.statusCode).json({
         success:false,
         message:err.message,
-        stack:err.stack,
-        error:err
+        // stack:err.stack,
+        // error:err 
     })
 }
 
 if(process.env.NODE_ENV == 'production'){
 let message = err.message;
-let error = {...err};
+let error =new Error(message);
 
 
   if(err.name=="ValidationError"){
