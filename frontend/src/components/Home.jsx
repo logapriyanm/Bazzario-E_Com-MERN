@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearError } from "../slices/productSlice";
+import { clearError } from "../slices/productsSlice";
 import { getProducts } from "../actions/productActions";
 
 import Loader from "./layouts/Loader";
@@ -21,18 +21,15 @@ export default function Home() {
         setCurrentPage(pageNo);
     }
 
-    useEffect(() => {
-        if (error) {
-            toast.error(error, {
-                position: "bottom-center"
-            });
-            dispatch(clearError());
-        }
+useEffect(() => {
+    if (error) {
+        toast.error(error, { position: "bottom-center" });
+        dispatch(clearError());
+    }
 
-        if (isAuthenticated) {
-            dispatch(getProducts(null, null, null, null, currentPage));
-        }
-    }, [error, dispatch, currentPage, isAuthenticated]);
+    // ✅ Always fetch products (with or without login)
+    dispatch(getProducts(null, null, null, null, currentPage));
+}, [error, dispatch, currentPage]);
 
     return (
         <Fragment>

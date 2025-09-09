@@ -123,7 +123,7 @@ export default function Register() {
                 <button
                 id="register_button"
                 type="submit"
-                className="btn btn-block py-3"
+                className="btn btn-block "
                 disabled={loading}
                 >
                 REGISTER

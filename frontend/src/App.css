@@ -313,6 +313,11 @@ footer {
   margin-top: 2.5rem;
 }
 
+#mail-pass {
+   display:grid;
+   gap: 20px;
+}
+
 .wrapper form a {
   font-size: 0.9rem;
   color: grey;

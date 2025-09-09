@@ -85,16 +85,16 @@ export const createReview = (reviewData) => async (dispatch) => {
   }
 };
 
-export const getAdminProducts = async (dispatch) => {
-  try {
-    dispatch(adminProductsRequest());
-    const { data } = await axios.get(`/api/v1/admin/products`);
-    dispatch(adminProductsSuccess(data));
-  } catch (error) {
-    //handle error
-    dispatch(adminProductsFail(error.response.data.message));
-  }
+export const getAdminProducts = () => async (dispatch) => {
+    try {
+        dispatch(adminProductsRequest());
+        const { data } = await axios.get(`/api/v1/admin/products`);
+        dispatch(adminProductsSuccess(data));
+    } catch (error) {
+        dispatch(adminProductsFail(error.response.data.message));
+    }
 };
+
 
 export const createNewProduct = (productData) => async (dispatch) => {
   try {
